@@ -22,11 +22,20 @@
 var Fish = function(name, color) {
   this.name = name
   this.color = color
+  //this.swim = func moved to prototype
 }
 
 Fish.prototype.swim = function() {
-  console.log("Splash!")
+  console.log(this.name + " Splash!")
 }
+
+// Fish.prototype = {
+//   swim: function() {
+//     console.log(this.name + " Splash!")
+//   }
+// } // this overided the inherated prototype so be every aware of what your overiding
 
 var myFish = new Fish("Jamie", "Orange")
 myFish.swim()
+
+console.log(Object.getPrototypeOf(myFish))//terminal prototype printout meth
