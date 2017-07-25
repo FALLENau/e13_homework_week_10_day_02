@@ -1,30 +1,30 @@
-// var myObject = {  shape: "circle" }
-//
-// myObject.radius = 10
-//
-// console.log( myObject )
-//
-// var myObject = new Object()
-//
-// myObject.shape = "square"
-//
-// console.log( myObject )
-//
-// var House = function( squareFeet, bathrooms, bedrooms ) {
-//   this.squareFeet = squareFeet
-//   this.bathrooms = bathrooms
-//   this.bedrooms = bedrooms
-//   this.numberOfRooms = function() {
-//     return( this.bathrooms + this.bedrooms )
-//   }
-// }
-//
-// var house1 = new House( 2000, 1, 2 )//with out the 'new' the Obj won't have a 'return'
-// var house2 = new House( 3000, 2, 3 )
-//
-// console.log( house1.numberOfRooms() )
-// console.log( house2.numberOfRooms() )
-//
+var myObject = {  shape: "circle" }
+
+myObject.radius = 10
+
+console.log( myObject )
+
+var myObject = new Object()
+
+myObject.shape = "square"
+
+console.log( myObject )
+
+var House = function( squareFeet, bathrooms, bedrooms ) {
+  this.squareFeet = squareFeet
+  this.bathrooms = bathrooms
+  this.bedrooms = bedrooms
+  this.numberOfRooms = function() {
+    return( this.bathrooms + this.bedrooms )
+  }
+}
+
+var house1 = new House( 2000, 1, 2 )//with out the 'new' the Obj won't have a 'return'
+var house2 = new House( 3000, 2, 3 )
+
+console.log( house1.numberOfRooms() )
+console.log( house2.numberOfRooms() )
+
 
 var Planet = function(name) {
   this.name = name
