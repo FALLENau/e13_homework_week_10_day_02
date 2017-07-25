@@ -22,9 +22,10 @@
 var Fish = function(name, color) {
   this.name = name
   this.color = color
-  this.swim = function() {
-    console.log("Splash!")
-  }
+}
+
+Fish.prototype.swim = function() {
+  console.log("Splash!")
 }
 
 var myFish = new Fish("Jamie", "Orange")
