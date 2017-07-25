@@ -1,0 +1,3 @@
+var myObject = {
+  shape: "circle"
+}
