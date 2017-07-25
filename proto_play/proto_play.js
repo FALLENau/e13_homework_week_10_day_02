@@ -26,3 +26,6 @@ var Fish = function(name, color) {
     console.log("Splash!")
   }
 }
+
+var myFish = new Fish("Jamie", "Orange")
+myFish.swim()
