@@ -38,6 +38,7 @@ describe("Athlete", function(){
     bottle.fill()
     athlete.run(100)
     athlete.drink()
+    assert.strictEqual( bottle.volume, 90 )
     assert.strictEqual( athlete.hydration, 10 )
   })
 })
