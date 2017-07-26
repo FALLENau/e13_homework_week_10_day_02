@@ -1,17 +1,19 @@
 var assert = require("assert")
-
 var Dino = require("../dino.js")
 
 describe("Dino", function(){
 
-  it("Dino has name", function(){
-    var dino = new Dino("Tyrannosaurus")
-    assert.strictEqual(dino.name, "Tyrannosaurus")
+  var tyrannosaurus
+
+  beforeEach(function() {
+    tyrannosaurus = new Dino("tyrannosaurus", 3)
   })
 
-  it("Dino can lay egg", function(){
-    var dino = new Dino("Tyrannosaurus")
-    dino.layEgg()
-    assert.strictEqual(dino.eggs.length, 1)
+  it("Dino has type", function(){
+    assert.strictEqual(tyrannosaurus.type, "Tyrannosaurus")
+  })
+
+  it("how many eggs a year", function(){
+    assert.strictEqual(tyrannosaurus.eggsAYear, 3)
   })
 })

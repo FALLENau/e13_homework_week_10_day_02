@@ -1,7 +1,4 @@
-
 // var bottle = new WaterBottle()
-
-
 
 var Athlete = function(bottle) {
   this.bottle = bottle
